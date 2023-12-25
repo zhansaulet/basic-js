@@ -10,20 +10,20 @@ const { NotImplementedError } = require('../extensions/index.js');
  * For aabbbc should return 2a3bc
  *
  */
-function encodeLine(str) {
-  // throw new NotImplementedError('Not implemented');
-  let strObj = {};
-  let res = '';
+function encodeLine(/* str */) {
+  throw new NotImplementedError('Not implemented');
+  // let strObj = {};
+  // let res = '';
 
-  str.split('').forEach(function (s) {
-    strObj[s] ? strObj[s] += 1 : strObj[s] = 1;
-  });
+  // str.split('').forEach(function (s) {
+  //   strObj[s] ? strObj[s] += 1 : strObj[s] = 1;
+  // });
 
-  for (const key in strObj) {
-    res += `${strObj[key]}${key}`;
-  }
+  // for (const key in strObj) {
+  //   res += `${strObj[key]}${key}`;
+  // }
 
-  return res;
+  // return res;
 }
 
 module.exports = {
